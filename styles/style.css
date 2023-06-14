@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'formPage';
+  src: url('../fonts/formPage.eot?mgw00l');
+  src: url('../fonts/formPage.eot?mgw00l#iefix') format('embedded-opentype'),
+    url('../fonts/formPage.ttf?mgw00l') format('truetype'),
+    url('../fonts/formPage.woff?mgw00l') format('woff'),
+    url('../fonts/formPage.svg?mgw00l#formPage') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'formPage' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: '\e903';
+}
+.icon-Compass:before {
+  content: '\e900';
+}
+.icon-Letter:before {
+  content: '\e901';
+}
+.icon-Calendar:before {
+  content: '\e902';
+}
+.icon-google-plus:before {
+  content: '\ea8b';
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 18px 79px;
+}
+.header-title {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.header-icon {
+  font-size: 23.5px;
+  transition: color 0.3s ease;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 5px;
+  width: 143px;
+  border-right: 1px white solid;
+}
+.navbar-item {
+  display: block;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-greeting {
+  font-style: 14px;
+  margin-left: 27px;
+}
+.nav {
+  display: flex;
+}
+
+.header:hover .header-title {
+  color: #236d47;
+}
+
+.header:hover .header-icon {
+  color: #236d47;
+}
+.header-ref {
+  transition: color 0.3s ease;
+}
+.header:hover .header-ref {
+  color: #236d47;
+}
+main {
+  margin-top: 54px;
+  margin-bottom: 74px;
+}
+body {
+  background-image: url('../assets/images/background.jpg');
+  background-size: cover;
+}
+
+.signup-form {
+  margin: 0 auto;
+  max-width: 444px;
+  background-color: #fff;
+  padding-bottom: 38px;
+}
+.signup-input {
+  width: 334px;
+}
+.signup-raw-1 {
+  display: flex;
+  padding-top: 29px;
+}
+
+.green-square {
+  background: #3cb878;
+  height: 18px;
+  width: 18px;
+  margin-right: 43px;
+  position: relative;
+  bottom: -2.5px;
+}
+.signup-title {
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 216px;
+}
+.login-ref {
+  display: block;
+  color: #3cb878;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  bottom: -5px;
+}
+.signup-networks-btns {
+  display: flex;
+
+  width: 322px;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.signup-networks-btns button {
+  display: flex;
+  width: 160px;
+  height: 48px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.facebook-btn {
+  position: relative;
+
+  background: #305db8;
+}
+.google-btn {
+  position: relative;
+  background: #df4a32;
+}
+.signup-icon-wrapper {
+  border-right: 1px rgba(10, 22, 47, 0.1) solid;
+  padding: 2px 17px;
+  font-size: 25px;
+  position: relative;
+  top: -3px;
+}
+
+.signup-network-name-wrapper {
+  padding-left: 18px;
+  position: relative;
+  bottom: -4px;
+}
+.division-block {
+  text-align: center;
+  margin-top: 31px;
+}
+.division-line {
+  display: inline-block;
+  width: 152px;
+  background: #f2f2f2;
+}
+.division-text {
+  display: inline-block;
+  font-size: 14px;
+  color: #848484;
+  position: relative;
+  bottom: 6px;
+}
+.signup-input {
+  display: inline-block;
+  width: 324px;
+  height: 44px;
+  margin: 15px auto 0px;
+  color: #bebebe;
+  border: 1px solid #f2f2f2;
+  font-size: 14px;
+  border-radius: 4px;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+.inputs-block {
+  text-align: center;
+}
+.signup-checkbox {
+  display: inline-block;
+  text-align-last: left;
+  width: 324px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #434343;
+  line-height: 20px;
+}
+.signup-checkbox input {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+.ref-terms-conditions {
+  color: #3cb878;
+}
+.agreement-block {
+  position: relative;
+  top: -4px;
+  left: 4px;
+}
+.create-account-btn {
+  width: 324px;
+  height: 46px;
+  background: rgba(60, 184, 120, 0.8);
+  border-radius: 4px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.signup-input:focus {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.21);
+  outline: none;
+}
+.google-btn:active {
+  background: #ab1f09;
+}
+.facebook-btn:active {
+  background: #022263;
+}
+.login-ref:active {
+  text-decoration: underline;
+  color: #01813f;
+}
+.ref-terms-conditions:active {
+  text-decoration: underline;
+  color: #01813f;
+}
+.create-account-btn:active {
+  background: #01813f;
+}
+.agreement {
+  display: none;
+}
+.checked-agreement {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.0001);
+  border: 1px solid #f2f2f2;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+.checked-agreement:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url('../assets/images/checked.svg');
+  position: absolute;
+  left: 1.25px;
+  opacity: 0;
+}
+.agreement:checked + .checked-agreement:before {
+  opacity: 1;
+}

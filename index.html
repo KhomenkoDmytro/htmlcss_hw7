@@ -4,19 +4,102 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.local.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Homework 7</title>
   </head>
   <body>
-    <header>
-      <h1 class="header">Journey</h1>
-      <i></i>
-      <i></i>
-      <i></i>
-      <p>Welcome, <a href="">Log In</a> or <a href="">Sign Up</a></p>
+    <header class="header">
+      <div class="logo">
+        <h1 class="header-title">Journey</h1>
+      </div>
+      <nav class="nav">
+        <div class="navbar">
+          <a href="#" class="navbar-item"
+            ><i class="header-icon icon-Calendar"></i
+          ></a>
+          <a href="#" class="navbar-item"
+            ><i class="header-icon icon-Letter"></i
+          ></a>
+          <a href="#" class="navbar-item"
+            ><i class="header-icon icon-Compass"></i
+          ></a>
+        </div>
+        <p class="header-greeting">
+          Welcome, <a class="header-ref" href="#">Log In</a> or
+          <a class="header-ref" href="#">Sign Up</a>
+        </p>
+      </nav>
     </header>
     <main>
-      <form action="">
-        <h2>Sign Up</h2>
+      <form action="" class="signup-form">
+        <div class="signup-raw-1">
+          <div class="green-square"></div>
+          <h2 class="signup-title">Sign Up</h2>
+          <a href="#" class="login-ref">Log in</a>
+        </div>
+        <div class="signup-networks-btns">
+          <button class="facebook-btn">
+            <div class="signup-icon-wrapper"><i class="icon-facebook"></i></div>
+            <div class="signup-network-name-wrapper">Facebook</div>
+          </button>
+
+          <button class="google-btn">
+            <div class="signup-icon-wrapper">
+              <i class="icon-google-plus"></i>
+            </div>
+            <div class="signup-network-name-wrapper">Google</div>
+          </button>
+        </div>
+
+        <div class="division-block">
+          <hr class="division-line" />
+          <div class="division-text">or</div>
+          <hr class="division-line" />
+        </div>
+        <div class="inputs-block">
+          <input
+            type="text"
+            name="name"
+            class="signup-input"
+            placeholder="First Name"
+          />
+          <input
+            type="text"
+            name="surname"
+            class="signup-input"
+            placeholder="Last Name"
+          />
+          <input
+            type="email"
+            name="email"
+            class="signup-input"
+            placeholder="Email"
+          />
+          <input
+            type="password"
+            name="password"
+            class="signup-input"
+            placeholder="Choose Password"
+          />
+          <input
+            type="password"
+            name="confirmPassword"
+            class="signup-input"
+            placeholder="Confirm Password"
+          />
+          <label for="agree" class="signup-checkbox">
+            <input type="checkbox" id="agree" class="agreement" />
+            <span class="checked-agreement"></span>
+            <span class="agreement-block">
+              Agree with our
+              <a class="ref-terms-conditions" href="#">Terms & Conditions</a>
+            </span>
+          </label>
+          <button type="submit" class="create-account-btn">
+            Create Account
+          </button>
+        </div>
       </form>
     </main>
   </body>
